@@ -3,6 +3,27 @@ body
 	width:425px;
 	margin:auto;
 	font-family: 'Roboto', 'Shrikhand','arial';
+
+}
+header
+{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+		
+}
+header button /*Bouton exploration des restaurants*/
+{
+	width:51.76%;
+	height:50px;
+	border-radius:25px;
+	color:white;
+	background:linear-gradient(#FF79DA,#9356DC);
+	border:none;
+}
+header button:hover
+{
+	cursor:pointer;
 }
 
 figure
