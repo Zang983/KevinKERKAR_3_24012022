@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,10 +7,9 @@
 		<meta name="description_page" content="Accueil du site de réservation de table" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<!--
 		LES TAILLES POUR LES FORMAT TABLETTES ET DESKTOP SONT A DEFINIR
@@ -26,29 +26,57 @@
 		<header>
 		
 			<div>
-				<img alt="Logo de la  marque" src="images/logo/ohmyfood@2x.svg" />
-				<p> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+					<h1>ohmyfood</h1>
+				<form id="localisation">
+					<label for="destination"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="text" placeholder="Paris, Belleville" id="destination"/>
+				</form>
 			</div>
-			<h1> Réservez le menu qui vous convient</h1>
-			<p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-			<button>Explorer nos restaurants</button>
+			<div id="accroche">
+				<h2> Réservez le menu qui vous convient</h2>
+				<p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+			</div>
+			<button class="gradient_button">Explorer nos restaurants</button>
 		</header>
-	
-		<h2>Fonctionnement</h2>
-		<ul id="fonctionnement">
-			<li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-			<li><i class="fas fa-list-ul operation__steps--icon"></i>Composez votre menu</li>
-			<li><i class="fas fa-store operation__steps--icon"></i>Dégustez au restaurant</li>
-		</ul>
-	
+		
+		
+		
+		<section id="how_use">
+			<h3>Fonctionnement</h3>
+			<ul>
+				<li>
+					<button>
+						<span  class="how_use_step">1</span>
+						<i class="fas fa-mobile-alt"></i>Choisissez un restaurant
+					</button>
+				</li>
+				<li>
+					
+					<button>
+						<span  class="how_use_step">2</span>
+						<i class="fas fa-list-ul operation__steps--icon"></i>Composez votre menu
+					</button>
+				</li>
+				<li>
+					
+					<button>
+						<span  class="how_use_step">3</span>
+						<i class="fas fa-store operation__steps--icon"></i>Dégustez au restaurant
+					</button>
+				</li>
+			</ul>
+		</section>
+		
 		<section id="restaurant">
-
+			<h3>Restaurants</h3>
+			
 			<a href="LaPaletteDuGout.html" class="fiche_restaurant">
+				<div class="new_restaurant">Nouveau</div>
 				<figure>
 					<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant" />
 					<figcaption>
 						<div>
-							<h3>La palette du goût</h3>
+							<h4>La palette du goût</h4>
 							<p>Ménilmontant</p>
 						</div>
 						<p><i class="fill far fa-heart fa-2x"></i></p>
@@ -57,11 +85,12 @@
 			</a>
 
 			<a href="LaNoteEnchantee.html" class="fiche_restaurant">
+				<div class="new_restaurant">Nouveau</div>
 				<figure>
 					<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat du restaurant" />
 					<figcaption>
 						<div>
-							<h3>La note enchantée</h3>
+							<h4>La note enchantée</h4>
 							<p>Charonne</p>
 						</div>
 						<p><i class="fill far fa-heart fa-2x"></i></p>
@@ -74,7 +103,7 @@
 					<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant" />
 					<figcaption>
 						<div>
-							<h3>À la française</h3>
+							<h4>À la française</h4>
 							<p>Cité Rouge</p>
 						</div>
 						<p><i class="fill far fa-heart fa-2x"></i></p>
@@ -87,7 +116,7 @@
 					<img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant" />
 					<figcaption>
 						<div>
-							<h3>Le délice des sens</h3>
+							<h4>Le délice des sens</h4>
 							<p>Folie-Méricourt</p>
 						</div>
 						<p><i class="fill far fa-heart fa-2x"></i></p>
@@ -98,7 +127,7 @@
 		</section>
 		
 		<footer>
-			<h3><img src="images/logo/ohmyfood@2x.svg" alt="logo de la marque" /></h3>
+			<h3>ohmyfood</h3>
 			<nav>
 				<ul>
 					<li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
