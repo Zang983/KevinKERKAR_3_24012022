@@ -26,20 +26,44 @@
 		
 			<div>
 				<img alt="Logo de la  marque" src="images/logo/ohmyfood@2x.svg" />
-				<p id="localisation"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+				<form id="localisation">
+					<label for="destination"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="text" placeholder="Paris, Belleville" id="destination"/>
+				</form>
 			</div>
 			<h1> Réservez le menu qui vous convient</h1>
 			<p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-			<button>Explorer nos restaurants</button>
+			<button class="gradient_button">Explorer nos restaurants</button>
 		</header>
-	
-		<h2>Fonctionnement</h2>
-		<ul id="fonctionnement">
-			<li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-			<li><i class="fas fa-list-ul operation__steps--icon"></i>Composez votre menu</li>
-			<li><i class="fas fa-store operation__steps--icon"></i>Dégustez au restaurant</li>
-		</ul>
-	
+		
+		
+		
+		<section id="how_use">
+			<h2>Fonctionnement</h2>
+			<ul>
+				<li>
+					<button>
+						<p  class="how_use_step">1</p>
+						<i class="fas fa-mobile-alt"></i>Choisissez un restaurant
+					</button>
+				</li>
+				<li>
+					
+					<button>
+						<p  class="how_use_step">2</p>
+						<i class="fas fa-list-ul operation__steps--icon"></i>Composez votre menu
+					</button>
+				</li>
+				<li>
+					
+					<button>
+						<p class="how_use_step">3</p>
+						<i class="fas fa-store operation__steps--icon"></i>Dégustez au restaurant
+					</button>
+				</li>
+			</ul>
+		</section>
+		
 		<section id="restaurant">
 			<h2>Restaurants</h2>
 			
