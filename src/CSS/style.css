@@ -141,13 +141,14 @@ header button:hover
 {
 	width:91%;
 	margin:auto;
-	padding-bottom:6%;
 	padding-top:8%;
 }
+
 figure
 {
 	width:91%;
 	margin:auto;
+	margin-top:0px;
 	height:250px;
 	border-radius:25px;
 	margin-bottom:20px;
@@ -222,4 +223,92 @@ footer nav ul li a i
 	top:40px;
 	background-color:#99e2d0;
 	color:#008766;
+}
+
+/*CSS MENU*/
+
+#restaurant_header
+{
+	background-color: white;
+	height:60px;
+	margin:0px;
+	padding:0px;
+}
+#restaurant_header p
+{	
+	width:100%;
+	display:flex;
+}
+#restaurant_header p a
+{
+	width:29.41%;
+
+}
+
+#restaurant_name
+{
+	font-family: 'Shrikhand';
+	width:91%;
+	margin:auto;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+#restaurant_photography
+{
+	margin-bottom: -
+}
+#restaurant_photography img
+{
+	width:100%;
+	height:255px;
+	object-fit: cover;
+}
+#shop_card
+{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#f6f6f6;
+	border-radius:25px 25px 0 0;
+	padding-bottom:60px;
+	padding-top:-50px;
+}
+#shop_card section
+{
+	width:91%;
+	margin:auto;
+}
+#shop_card ul li
+{
+	height:70px;
+	margin-bottom:20px;
+	display:flex;
+	flex-wrap: wrap;
+	background-color:white;
+	border-radius:15px;
+	box-shadow: 1px 1px 3px 3px lightgray;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:15px;
+	
+}
+#shop_card h3
+{
+	margin:0px;
+	width:100%;
+	padding:0px;
+}
+#shop_card p
+{
+	margin-top:0px;
+}
+
+.product_description
+{
+	display:flex;
+	width:100%;
+	justify-content: space-between;
+	align-items: center;
 }
