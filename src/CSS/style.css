@@ -5,12 +5,45 @@ body
 	font-family: 'Roboto', 'Shrikhand','arial';
 
 }
+a
+{
+	text-decoration: none;
+	color:black;
+}
 header
 {
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-		
+	backround-color:#f6f6f6;
+	width:100%;
+}
+header p, header h1
+{
+	width:65%;
+	margin:auto;
+	text-align:center;
+	margin-top:5%;
+}
+header div
+{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+header div img
+{
+	width:40%;
+}
+#localisation
+{
+	width:100%;
+	height:50px;
+	background-color:#eaeaea;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 header button /*Bouton exploration des restaurants*/
 {
@@ -25,12 +58,24 @@ header button:hover
 {
 	cursor:pointer;
 }
+#restaurant
+{
+	background-color:#f6f6f6;
+	padding-bottom:8%;
 
+}
+#restaurant h2
+{
+	width:91%;
+	margin:auto;
+	padding-bottom:6%;
+	padding-top:8%;
+}
 figure
 {
 	width:91%;
-	height:250px;
 	margin:auto;
+	height:250px;
 	border-radius:25px;
 	margin-bottom:20px;
 	box-shadow: 1px 1px 3px 3px lightgray;
@@ -48,4 +93,60 @@ figure h3, figure p
 	margin-top:5px;
 	margin-bottom:5px;
 	margin-left:10px;
+}
+figcaption
+{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right:5%;
+}
+
+footer
+{
+	background-color:#353535;
+}
+footer nav
+{
+	width:91%;
+	margin:auto;
+}
+footer h3
+{
+	padding-top:5%;
+	width:91%;
+	margin:auto;
+	color:white;
+	font-family:Shrikhand;
+}
+ul
+{
+	padding:0px;
+}
+ul li
+{
+	list-style-type:none;
+}
+footer nav ul li a
+{
+	color:white;
+}
+footer nav ul li a i
+{
+	margin-right :2%;
+	width:25px;
+	height:25px;
+}
+.new_on_menu
+{
+	font-weight:bold;
+	position:relative;
+	width:80px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+	left:70%;
+	top:40px;
+	background-color:#99e2d0;
+	color:#008766;
 }
