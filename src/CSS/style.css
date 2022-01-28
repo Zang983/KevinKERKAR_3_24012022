@@ -163,6 +163,7 @@ button:hover
 	width:91%;
 	margin:auto;
 	padding-top:8%;
+	margin-bottom:20px;
 }
 
 figure
@@ -172,8 +173,8 @@ figure
 	margin-top:0px;
 	height:250px;
 	border-radius:25px;
-	margin-bottom:20px;
 	box-shadow: 1px 1px 3px 3px lightgray;
+	margin-bottom:30px;
 }
 
 figure img
@@ -214,7 +215,7 @@ footer h3
 	width:91%;
 	margin:auto;
 	color:white;
-	font-family:Shrikhand;
+	font-family:'Shrikhand';
 }
 ul
 {
@@ -236,6 +237,7 @@ footer nav ul li a i
 }
 .new_restaurant
 {
+	
 	font-weight:bold;
 	position:relative;
 	width:80px;
@@ -246,6 +248,7 @@ footer nav ul li a i
 	top:40px;
 	background-color:#99e2d0;
 	color:#008766;
+	margin-top:-29px;/* Application d'une marge négative correspondant à la taille de la police*/
 }
 
 /*CSS MENU*/
