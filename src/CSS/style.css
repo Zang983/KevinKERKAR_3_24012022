@@ -164,7 +164,6 @@ button:hover
 
 }
 
-
 #restaurant h3
 {
 	width:91%;
@@ -255,7 +254,7 @@ footer nav ul li a i
 	top:40px;
 	background-color:#99e2d0;
 	color:#008766;
-	margin-top:-29px;/* Application d'une marge négative correspondant à la taille de la police*/
+	margin-top:-29px;/* Application d'une marge négative correspondant à la taille de la police pour éviter les décalages*/
 }
 
 /*CSS MENU*/
@@ -289,6 +288,7 @@ footer nav ul li a i
 #restaurant_name
 {
 	font-family: 'Shrikhand';
+	font-weight:600;
 	width:91%;
 	display:flex;
 	align-items: center;
@@ -320,6 +320,12 @@ margin-top:10px;
 	margin:auto;
 }
 
+.souligne/*Effet souligné des parties des menus*/
+{
+	display:inline-block;
+	border-bottom:3px solid #99e2d0;
+	padding-bottom: 5px;	
+}
 
 .product
 {
@@ -338,7 +344,7 @@ margin-top:10px;
 }
 .product--information
 {
-	width:90%;
+	width:100%;
 	display:flex;
 	flex-direction: column;
 }
@@ -346,7 +352,6 @@ margin-top:10px;
 {
 	margin-top:0px;
 	margin-bottom:5%;
-	width:90%;
 	padding:0px;
 	overflow:hidden;/* On ajoute ces propriétés au cas ou un jour un intitulé de plat soit vraiment long*/
 	white-space:nowrap;
@@ -354,29 +359,23 @@ margin-top:10px;
 }
 .product p
 {
-	width:90%;
+	width:100%;
 	margin:0px;
 	max-width:275px;
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow: ellipsis;
+
 }
 
 .product--description
 {
 	display:flex;
 	flex-direction: row;
-	width:90%;
 	justify-content: space-between;
 	align-items: center;
-	text-overflow: ellipsis;
 }
-.souligne
-{
-	display:inline-block;
-	border-bottom:3px solid #99e2d0;
-	padding-bottom: 5px;	
-}
+
 .check_status
 {
 	height:70px;
@@ -386,16 +385,16 @@ margin-top:10px;
 	background-color:#99e2d0;
 	display:flex;
 	border-radius:0 15px 15px 0;
-	transform:scale(0);
-	text-overflow: clip;
-	max-width:20%;
+	max-width:15%;
+	margin-left:10px;
+
 }
 .check_status i
 {
 	color:#99e2d0;
 	background-color:white;
 	border-radius:100%;
-	font-size:0px;
+	font-size:0px;	
 }
 /*
 L'animation d'apparition du  menu contient une baisse des marges entre chaque éléments des menus.
@@ -408,10 +407,6 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
   animation-fill-mode: forwards;
 }*
 
-.check_status
-{
-	transform: scale(1);
-}
 .product:hover 
 {
 	cursor:pointer;
@@ -429,6 +424,7 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 	animation-iteration-count: 1;
 
 }
+
 
 @keyframes upscale /*Augmente la taille du block contenant l'icone check*/
 {
@@ -472,3 +468,87 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 	} 
 } */
 	
+#main
+{
+	animation: afterloading 3s;
+  	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+
+#triangle_loader 
+{
+	animation:loading 4s;
+	animation-fill-mode:forwards;
+	animation-iteration-count: 1;
+	position:absolute;
+	top:10%;
+	left:50%;
+    width: 0px;
+    height: 0px;
+    border-top: 36px solid transparent;
+    border-bottom: 36px solid transparent;
+    border-left:60px solid #99E2D0;
+	color:transparent;
+}
+@keyframes loading
+{
+	0%
+	{
+		transform:rotate(0deg);
+		border-top: 36px solid transparent;
+		border-bottom: 36px solid transparent;
+		border-left: 60px solid #9356DC;
+	}
+	33%
+	{
+		transform:rotate(90deg);
+		border-top: 36px solid transparent;
+		border-bottom: 36px solid transparent;
+		border-left: 60px solid #FF79DA;
+		top:80%;
+	}
+
+	66%
+	{
+		transform:rotate(-90deg);
+		border-top: 36px solid transparent;
+		border-bottom: 36px solid transparent;
+		border-left: 60px solid #99E2D0;
+		top:30%;
+	}
+	90%
+	{
+		transform:rotate(90deg);
+		
+	}
+	100%
+	{
+		opacity:1;
+		width:auto;
+		top:-500px;
+		font-size:400%;
+	}
+}
+@keyframes afterloading
+{
+	0%
+	{
+		transform:scale(0);
+		height:0px;
+	}
+	61%
+	{
+		height:0px;
+	}
+	62%
+	{
+		height:auto;
+		transform:scale(0);
+		opacity:0;
+	}
+	100%
+	{
+		transform:scale(1);
+		opacity:100%;
+	}
+}
