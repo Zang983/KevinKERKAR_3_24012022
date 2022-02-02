@@ -1,6 +1,6 @@
 body
 {
-	width:425px;
+	max-width:425px;
 	margin:auto;
 	font-family: 'Roboto', 'Shrikhand','arial';
 
@@ -14,7 +14,9 @@ a
 {
 	text-decoration: none;
 	color:black;
+
 }
+
 header
 {
 	display:flex;
@@ -294,6 +296,18 @@ footer nav ul li a i
 	align-items: center;
 	margin-top:30px;	
 }
+#restaurant_name h1
+{
+	width:75%;
+}
+
+#restaurant_name .gradient
+{
+	margin-left:40px;
+}
+
+
+
 #restaurant_photography
 {
 margin-top:10px;
@@ -320,7 +334,7 @@ margin-top:10px;
 	margin:auto;
 }
 
-.souligne/*Effet souligné des parties des menus*/
+.underline/*Effet souligné des parties des menus*/
 {
 	display:inline-block;
 	border-bottom:3px solid #99e2d0;
@@ -336,7 +350,6 @@ margin-top:10px;
 	border-radius:15px;
 	box-shadow: 1px 1px 3px 3px lightgray;
 	display:flex;
-	align-items: center;
 }
 .product:hover 
 {
@@ -350,8 +363,9 @@ margin-top:10px;
 }
 #shop_card h3
 {
-	margin-top:0px;
-	margin-bottom:5%;
+	height:35px;
+	margin-top:10px;
+	margin-bottom:5px;
 	padding:0px;
 	overflow:hidden;/* On ajoute ces propriétés au cas ou un jour un intitulé de plat soit vraiment long*/
 	white-space:nowrap;
@@ -359,6 +373,7 @@ margin-top:10px;
 }
 .product p
 {
+	height:20px;
 	width:100%;
 	margin:0px;
 	max-width:275px;
@@ -373,7 +388,8 @@ margin-top:10px;
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center;	
+	margin-bottom:10px;
 }
 
 .check_status
@@ -420,9 +436,8 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 }
 .product:hover .check_status i
 {
-	animation:bigger_size 0.5s;
+	animation:bigger_size 0.6s;
 	animation-iteration-count: 1;
-
 }
 
 
@@ -468,16 +483,17 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 	} 
 } */
 	
-#main
+#index_main
 {
-	animation: afterloading 3s;
+	/*animation: afterloading 3s;*/
+	animation: afterloading 2.8s;
   	animation-fill-mode: forwards;
 	transform-origin: bottom;
 }
 
 #triangle_loader 
 {
-	animation:loading 4s;
+	animation:loading 2.5s;
 	animation-fill-mode:forwards;
 	animation-iteration-count: 1;
 	position:absolute;
@@ -490,7 +506,7 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
     border-left:60px solid #99E2D0;
 	color:transparent;
 }
-@keyframes loading
+@keyframes loading /*Loader*/
 {
 	0%
 	{
@@ -529,7 +545,7 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 		font-size:400%;
 	}
 }
-@keyframes afterloading
+@keyframes afterloading /*Apparition de l'index*/
 {
 	0%
 	{
@@ -552,3 +568,12 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 		opacity:100%;
 	}
 }
+.gradient:hover  /*Transforme les coeurs vide en coeur plein et dégradé.*/
+{
+	cursor:pointer;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;
+}
+
