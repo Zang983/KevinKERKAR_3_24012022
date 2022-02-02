@@ -5,11 +5,7 @@ body
 	font-family: 'Roboto', 'Shrikhand','arial';
 
 }
-h1
-{
-	margin:0;
-	font-family: 'Shrikhand';
-}
+
 a
 {
 	text-decoration: none;
@@ -66,15 +62,14 @@ header div img
 #accroche
 {
 	margin-top:20px;
-	width:70%;
+	width:75%;
 	text-align: center;
 	background-color:#f6f6f6;
 }
-#accroche h2
+#accroche h1
 {
-	width:90%;
+	width:96%;
 	margin:auto;
-	font-weight: bolder;
 }
 #accroche p
 {
@@ -89,10 +84,14 @@ header div img
 	color:white;
 	background:linear-gradient(#FF79DA,#9356DC);
 	border:none;
+	box-shadow: 1px 1px 2px 2px lightgray;
 }
 button:hover
 {
 	cursor:pointer;
+	filter:brightness(1.1);
+	box-shadow: 1px 1px 2px 2px gray;
+	
 }
 
 
@@ -166,7 +165,7 @@ button:hover
 
 }
 
-#restaurant h3
+#restaurant h2
 {
 	width:91%;
 	margin:auto;
@@ -192,7 +191,7 @@ figure img
 	border-radius : 25px 25px 0 0;
 	object-fit:cover;
 }
-figure h4, figure p
+figure h3, figure p
 {
 	margin-top:5px;
 	margin-bottom:5px;
@@ -216,7 +215,7 @@ footer nav
 	width:91%;
 	margin:auto;
 }
-footer h3
+footer h2
 {
 	font-weight: lighter;
 	padding-top:5%;
@@ -286,6 +285,7 @@ footer nav ul li a i
 #restaurant_header i
 {
 	margin-left:25px;
+	font-size:150%;
 }
 #restaurant_name
 {
@@ -354,7 +354,10 @@ margin-top:10px;
 .product:hover 
 {
 	cursor:pointer;
+	box-shadow: 3px 3px 5px 5px lightgray;
+	
 }
+
 .product--information
 {
 	width:100%;
@@ -401,7 +404,7 @@ margin-top:10px;
 	background-color:#99e2d0;
 	display:flex;
 	border-radius:0 15px 15px 0;
-	max-width:15%;
+	max-width:20%;
 	margin-left:10px;
 
 }
@@ -419,9 +422,9 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 */
 .menu_composition ul li
 {
-  animation: fadeInAnimation 6.7s;
-  animation-fill-mode: forwards;
-}*
+	animation: fadeInAnimation 2s;
+	animation-fill-mode: forwards;
+}
 
 .product:hover 
 {
@@ -440,12 +443,25 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 	animation-iteration-count: 1;
 }
 
+@keyframes fadeInAnimation /*Tentative de dégradé au chargement de la page*/
+{ 
+	0% 
+	{ 
+	opacity: 0;
+	margin-bottom: 30px;
+	} 
+
+	100% 
+	{ 
+	opacity: 1; 
+
+	} 
+} 
 
 @keyframes upscale /*Augmente la taille du block contenant l'icone check*/
 {
 	0%
 	{
-
 		width:0%;
 	}
 	100%
@@ -468,21 +484,12 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 	}
 }
 
-/*@keyframes fadeInAnimation /*Tentative de dégradé au chargement de la page*/
-/*{ 
-	0% 
-	{ 
-	opacity: 0;
-
-	} 
-
-	100% 
-	{ 
-	opacity: 1; 
-
-	} 
-} */
-	
+.gradient:hover  /*Transforme les coeurs vide en coeur plein et dégradé.*/
+{
+	cursor:pointer;
+	animation: heartgradient 1s;
+  	animation-fill-mode: forwards;
+}	
 #index_main
 {
 	/*animation: afterloading 3s;*/
@@ -506,6 +513,27 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
     border-left:60px solid #99E2D0;
 	color:transparent;
 }
+
+@keyframes heartgradient
+{
+	0%
+	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;
+	opacity:0.2;
+	}
+	100%
+	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;	
+	}
+
+}
+
 @keyframes loading /*Loader*/
 {
 	0%
@@ -567,13 +595,5 @@ J'ai utilisé scale pour l'instant mais ça ne fonctionne pas comme je voudrais,
 		transform:scale(1);
 		opacity:100%;
 	}
-}
-.gradient:hover  /*Transforme les coeurs vide en coeur plein et dégradé.*/
-{
-	cursor:pointer;
-	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	font-weight:bold;
 }
 
