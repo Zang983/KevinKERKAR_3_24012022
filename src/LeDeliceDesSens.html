@@ -8,8 +8,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<!--<link rel="stylesheet" media="screen and (max-width: ???px)" href="css/tablette.css" />
-		<link rel="stylesheet" media="screen and (max-width: ???px)" href="css/desktop.css" />-->
+		<link rel="stylesheet" media="screen and (min-width: 769px)" href="css/tablette.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1081px)" href="css/desktop.css" />
 		<title>Menu du restaurant Le délice des sens</title> 
     </head>
 	
@@ -23,137 +23,139 @@
 		</header>
 		<div id="main">
 			<div id="restaurant_photography">
-				<img alt="image d'un plat du restaurant" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+				<img alt="image d'un plat du restaurant" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
 			</div>
 			<div id="shop_card">
 					<div id="restaurant_name">
 						<h1>Le délice des sens</h1>
 						<i class="fill far fa-heart fa-2x gradient"></i>
 					</div>
-				<section id="starter" class="menu_composition">
-					<h2><span class="underline">ENTR</span>ÉES</h2>					
-					<ul>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Tartare de thon</h3>
-									<div class="product--description">
-										<p>Assaisonné au yuzu</p>
-										<div class="product--price">25€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Bouchée de homard croustillant</h3>
-									<div class="product--description">
-										<p>Et sa farandole de petits légumes</p>
-										<div class="product--price">35€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Velouté de cèpes </h3>
-									<div class="product--description">
-										<p>Aux truffes</p>
-										<div class="product--price">20€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-					</ul>
-				</section>
-				<section id="main_course" class="menu_composition">
-					<h2><span class="underline">PLAT</span>S</h2>
-					<ul>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Poulet rôti aux herbes de Provence</h3>
-									<div class="product--description">
-										<p>Et sa crème de truffe</p>
-										<div class="product--price">40€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Langouste rôtie</h3>
-								
-									<div class="product--description">
-										<p>Et ses légumes de saison</p>
-										<div class="product--price">35€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Côte de boeuf Angus</h3>
-									<div class="product--description">
-										<p>Et sa purée de panais</p>
-										<div class="product--price">44€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-					</ul>
-				</section>
-				<section id="dessert" class="menu_composition">
-					<h2><span class="underline">DESS</span>ERTS</h2>
-					<ul>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Farandole de desserts</h3>
-									<div class="product--description">
-										<p>Du chef</p>
-										<div class="product--price">18€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Crème brulée </h3>
-									<div class="product--description">
-										<p>Revisitée</p>
-										<div class="product--price">22€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-						<li class="product">
-							<div class="product--information">
-							<h3 class="product--title">Tiramisu </h3>
-									<div class="product--description">
-										<p>À la noisette</p>
-										<div class="product--price">23€</div>
-									</div>
-							</div>
-							<div class="check_status">
-								<i class="far fa-check-circle"></i>
-							</div>
-						</li>
-					</ul>
-				</section>
+				<div id="menu_list">
+					<section id="starter" class="menu_composition">
+						<h2><span class="underline">ENTR</span>ÉES</h2>					
+						<ul>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Tartare de thon</h3>
+										<div class="product--description">
+											<p>Assaisonné au yuzu</p>
+											<div class="product--price">25€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Bouchée de homard croustillant</h3>
+										<div class="product--description">
+											<p>Et sa farandole de petits légumes</p>
+											<div class="product--price">35€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Velouté de cèpes </h3>
+										<div class="product--description">
+											<p>Aux truffes</p>
+											<div class="product--price">20€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section id="main_course" class="menu_composition">
+						<h2><span class="underline">PLAT</span>S</h2>
+						<ul>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Poulet rôti aux herbes de Provence</h3>
+										<div class="product--description">
+											<p>Et sa crème de truffe</p>
+											<div class="product--price">40€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Langouste rôtie</h3>
+
+										<div class="product--description">
+											<p>Et ses légumes de saison</p>
+											<div class="product--price">35€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Côte de boeuf Angus</h3>
+										<div class="product--description">
+											<p>Et sa purée de panais</p>
+											<div class="product--price">44€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section id="dessert" class="menu_composition">
+						<h2><span class="underline">DESS</span>ERTS</h2>
+						<ul>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Farandole de desserts</h3>
+										<div class="product--description">
+											<p>Du chef</p>
+											<div class="product--price">18€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Crème brulée </h3>
+										<div class="product--description">
+											<p>Revisitée</p>
+											<div class="product--price">22€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+							<li class="product">
+								<div class="product--information">
+								<h3 class="product--title">Tiramisu </h3>
+										<div class="product--description">
+											<p>À la noisette</p>
+											<div class="product--price">23€</div>
+										</div>
+								</div>
+								<div class="check_status">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
 
 				<button class="gradient_button">Commander</button>
 			</div>

@@ -1,0 +1,68 @@
+body
+{
+	width:auto;
+	max-width:none;
+}
+
+#how_use ul
+{
+	display:flex;
+	justify-content: space-between;
+
+}
+#how_use li
+{
+	width:30%;
+}
+#how_use
+{
+	margin-bottom:50px;
+}
+#restaurant h2
+{
+	width:100%;
+}
+
+#restaurant
+{
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom:0px;
+	padding-left:4.5%;
+	padding-right:4.5%;
+}
+#restaurant h2
+{
+	padding-top: 30px;
+	
+}
+#restaurant figure
+{
+	height:350px;
+	margin-bottom: 0px;
+}
+#restaurant figure img
+{
+	height:75%;
+}
+.new_restaurant
+{
+	left:70%;
+	top:18%;
+}
+#restaurant a
+{
+	display:inline-block;
+	position:relative;
+	margin:0px;
+	margin-bottom:50px;
+	width:30%;
+}
+
+footer h2
+{
+	padding-top:2%;
+}
+/*MODIFICATION DE LA PAGE DES MENUS*/
+

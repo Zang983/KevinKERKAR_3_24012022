@@ -1,0 +1,60 @@
+body
+{
+	max-width:1079px;
+}
+#index_main header img
+{
+	width:250px;
+}
+
+.gradient_button
+{
+	width:250px;
+}
+
+.new_restaurant
+{
+	left:80%;
+	top:60px;
+}
+#restaurant figure
+{
+	height:350px;
+}
+#restaurant figure img
+{
+	height:80%;
+}
+/*MODIFICATION DES PAGES MENUS*/
+
+
+
+#restaurant_header p
+{
+	width:50%;
+}
+#restaurant_header i
+{
+	margin-left:25px;
+	font-size:150%;
+	
+}
+#restaurant_header img
+{
+	width:250px;
+	margin-left:-125px;/*L'image du logo sera toujours centrée.*/
+}
+#menu_list
+{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	width:100%;
+	width:91%;
+	margin:auto;
+	justify-content: space-between;
+}
+.product
+{
+	width:100%;
+}
