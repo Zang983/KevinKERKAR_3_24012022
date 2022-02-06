@@ -397,8 +397,10 @@ margin:auto;
 	margin-left:10px;
 	animation:upscale 0.5s;
 	transform:scale(0);
-	color:white;
+	color:#99e2d0;
 	margin:auto;
+	background-color:white;
+	border-radius:100%;
 }
 
 .menu_composition ul li
