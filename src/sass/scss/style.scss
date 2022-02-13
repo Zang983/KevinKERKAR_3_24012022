@@ -2,8 +2,11 @@
 @import "utils/mixin";
 @import "base/base";
 @import "components/components";
+@import "components/animations";
+@import "components/loader";
 @import "layouts/header";
 @import "layouts/sections";
 @import "layouts/footer";
 @import "pages/index";
-@import "pages/restaurant"
+@import "pages/common";
+

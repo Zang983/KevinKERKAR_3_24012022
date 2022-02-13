@@ -1,4 +1,36 @@
-body
+.localisation
 {
-	background-color:$primary_colour;
+	width:100%;
+	height:50px;
+	background-color:#eaeaea;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	label
+	{
+		margin-right:15px;
+	}
+	input  
+	{
+		border:none;
+		background-color:#EAEAEA;
+	}
+	
+}
+.accroche
+{
+	margin-top:20px;
+	width:100%;
+	margin:auto;
+	text-align: center;
+	background: $gray;
+	h1
+	{
+		width:75%;
+		margin:auto;
+	}
+	p
+	{
+		color:#4D4D4D;
+	}
 }
