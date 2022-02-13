@@ -26,3 +26,9 @@
 	margin:auto;
 	margin-top:60px;
 }
+
+.menu_composition ul li
+{
+	animation: fadeInAnimation 2s;
+	animation-fill-mode: forwards;
+}

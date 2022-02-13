@@ -1,3 +1,7 @@
+header
+{
+	background-color:$gray;
+}
 .head
 {
 	display:flex;
@@ -26,4 +30,8 @@
 		}
 	}
 	
+}
+.index--header
+{
+	padding-bottom:40px;
 }

@@ -1,3 +1,28 @@
+/*PARTIE LOADER*/
+#index_main
+{
+	animation: afterloading 2.8s;
+  	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+
+#triangle_loader 
+{
+	animation:loading 2.5s;
+	animation-fill-mode:forwards;
+	animation-iteration-count: 1;
+	position:absolute;
+	top:10%;
+	left:50%;
+    width: 0px;
+    height: 0px;
+    border-top: 36px solid transparent;
+    border-bottom: 36px solid transparent;
+    border-left:60px solid #99E2D0;
+	color:transparent;
+}
+
+/*PARTIE HAUTE DE LA PAGE*/
 .localisation
 {
 	width:100%;
@@ -19,7 +44,7 @@
 }
 .accroche
 {
-	margin-top:20px;
+	
 	width:100%;
 	margin:auto;
 	text-align: center;
@@ -28,9 +53,19 @@
 	{
 		width:75%;
 		margin:auto;
+		margin-top:40px;
+		font-family: 'Roboto';
+		font-weight:bold;
 	}
 	p
 	{
 		color:#4D4D4D;
+		font-size:110%;
+		width:85%;
+		margin:auto;
+		margin-top:20px;
+		margin-bottom:35px;
+		
+		
 	}
 }

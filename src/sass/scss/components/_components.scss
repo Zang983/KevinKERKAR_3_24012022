@@ -7,15 +7,18 @@
 	border:none;
 	@include light-shadow;
 	@include radius25;
-	&--smaller
-	{
-		width:200px;
-	}
 	&--center
 	{
 		display:block;
 		margin:auto;
 	}
+	&--smaller
+	{
+		width:175px;
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+
 	&:hover
 	{
 		cursor:pointer;
@@ -59,7 +62,7 @@
 		position:relative;
 		left:-12.5px;
 	}
-	&:hover
+	&:active
 	{
 		cursor:pointer;
 		background-color:#F5EDFF;
@@ -123,3 +126,91 @@
 		animation-fill-mode: forwards;	
 	}
 }
+.restaurant__photography
+{
+	width:100%;
+	height:255px;
+	object-fit: cover
+}
+/*COMPOSANTS DES PAGES RESTAURANTS*/
+.product
+{
+	height:70px;
+	width:100%;
+	margin-bottom:20px;	
+	background-color:white;
+	display:flex;
+	border-radius:25px;
+	@include light_shadow;
+	&:hover
+	{
+		cursor:pointer;
+	}
+	&--information
+	{
+		display:flex;
+		flex-direction:column;
+		min-width:0;/*Permet aux enfants flex de maintenir la troncature si nécessaire.*/
+		width:100%;
+	}
+	&--description
+	{
+		display:flex;
+		justify-content: space-between;
+	}
+	p,&--title
+	{
+		margin:0px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+		margin-left:20px;
+	}
+	&--title
+	{
+		margin-top:10px;
+		margin-bottom:5px;
+	}
+	&--price
+	{
+		margin-left:15px;
+		margin-right:1px;
+		font-weight:bold;
+	}
+	&--check_status
+	{
+		transform:scale(0);
+		background-color:#99e2d0;
+		display:flex;
+		align-items: center;
+		border-radius: 0 25px 25px 0;
+		i
+		{
+			margin-left:10px;
+			animation:upscale 0.5s;
+			transform:scale(0);
+			color:#99e2d0;
+			margin:auto;
+			background-color:white;
+			border-radius:100%;
+		}
+	}
+	&:hover
+	{
+		cursor:pointer;
+	}
+	&:hover &--check_status
+	{
+		animation:upscale 0.8s;
+		animation-iteration-count: 1;
+		transform-origin: 0 100%;
+		margin-left:10px;
+		i
+		{
+			animation:bigger_size 0.8s;
+			animation-iteration-count: 1;
+		}
+	}
+
+}
+
