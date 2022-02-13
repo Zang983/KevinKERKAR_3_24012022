@@ -1,0 +1,130 @@
+@keyframes gradientheart
+{
+	0%
+	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;
+	opacity:0.2;
+	}
+	100%
+	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;	
+	}
+
+}
+
+@keyframes loading /*Loader*/
+{
+	0%
+	{
+		transform:rotate(0deg);
+		border-top: 36px solid transparent;
+		border-bottom: 36px solid transparent;
+		border-left: 60px solid #9356DC;
+	}
+	33%
+	{
+		transform:rotate(90deg);
+		border-top: 36px solid transparent;
+		border-bottom: 36px solid transparent;
+		border-left: 60px solid #FF79DA;
+		top:80%;
+	}
+
+	66%
+	{
+		transform:rotate(-90deg);
+		border-top: 36px solid transparent;
+		border-bottom: 36px solid transparent;
+		border-left: 60px solid #99E2D0;
+		top:30%;
+	}
+	90%
+	{
+		transform:rotate(90deg);
+		
+	}
+	100%
+	{
+		opacity:1;
+		width:auto;
+		top:-500px;
+		font-size:400%;
+	}
+}
+@keyframes afterloading /*Apparition de l'index*/
+{
+	0%
+	{
+		transform:scale(0);
+		height:0px;
+	}
+	61%
+	{
+		height:0px;
+	}
+	62%
+	{
+		height:auto;
+		transform:scale(0);
+		opacity:0;
+	}
+	100%
+	{
+		transform:scale(1);
+		opacity:100%;
+	}
+}
+@keyframes upscale /*Augmente la taille du block contenant l'icone check*/
+{
+	0%
+	{
+		width:0%;
+		transform: scale(1);
+		
+	}
+	100%
+	{
+		font-size:15px;
+		width:90px;
+		height:70px;
+		transform: scale(1);
+	}
+}
+@keyframes bigger_size /*Augmente la taille de la police de l'icone check*/
+{
+	0%
+	{
+		font-size:0px;
+		transform:rotate(0deg);
+	}
+	38%
+	{
+		font-size:30px;
+		transform:rotate(0deg);
+	}
+	100%
+	{
+		transform:rotate(360deg);
+		font-size:30px;
+	}
+}
+@keyframes fadeInAnimation /*Tentative de dégradé au chargement de la page*/
+{ 
+	0% 
+	{ 
+	opacity: 0;
+	margin-bottom: 30px;
+	} 
+
+	100% 
+	{ 
+	opacity: 1; 
+
+	} 
+} 

@@ -1,0 +1,34 @@
+#how_use
+{
+	width:91%;
+	margin:auto;
+}
+
+#restaurant
+{
+	margin-top:25px;
+	background-color:$gray;
+	padding-bottom:8%;
+	display:flex;
+	flex-direction:column;
+	h2
+	{
+		width:91%;
+		margin:auto;
+		padding-top:8%;
+		margin-bottom:20px;
+	}
+}
+
+.menu_composition
+{
+	width:91%;
+	margin:auto;
+	margin-top:60px;
+}
+
+.menu_composition ul li
+{
+	animation: fadeInAnimation 2s;
+	animation-fill-mode: forwards;
+}

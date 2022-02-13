@@ -1,0 +1,41 @@
+.wrapper /*Englobe tout le corps de la page d'un restaurant.*/
+{
+	display:flex;
+	flex-direction: column;
+}
+
+.restaurant__global
+{
+	width:100%;
+	margin:auto;
+	border-radius:45px 45px 0 0;
+	background-color:#f6f6f6;
+	margin-top:-50px;
+}
+.restaurant__header
+{
+	display:flex;
+	width:91%;
+	justify-content:space-between;
+	align-items:center;
+	margin:auto;
+	margin-top:30px;
+	h1
+	{
+		font-family: 'Shrikhand';
+		font-weight:lighter;
+		margin-bottom:0px;
+		font-size:24px;
+	}
+	.gradient_heart
+	{
+		padding-right:40px;
+		font-size:24px;
+	}
+}
+.underline /*Effet souligné des parties des menus*/
+{
+	display:inline-block;
+	border-bottom:3px solid #99e2d0;
+	padding-bottom: 5px;	
+}
