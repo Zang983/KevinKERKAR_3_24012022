@@ -24,7 +24,7 @@ li {
 
 .gradient_button {
   color: white;
-  background: linear-gradient(#9856DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9856DC);
   width: 250px;
   height: 50px;
   border: none;
@@ -454,6 +454,7 @@ footer i {
 }
 .accroche h1 {
   width: 75%;
+  font-size: 170%;
   margin: auto;
   margin-top: 40px;
   font-weight: bold;
