@@ -11,6 +11,7 @@ a {
 body {
   max-width: 768px;
   margin: auto;
+  font-family: "roboto";
 }
 
 ul {
@@ -19,10 +20,6 @@ ul {
 
 li {
   list-style-type: none;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'roboto';
 }
 
 .gradient_button {
@@ -60,11 +57,13 @@ h1, h2, h3, h4 {
   border: none;
   height: 75px;
   margin-top: 20px;
+  font-weight: bold;
+  font-size: 1em;
   box-shadow: 1px 1px 2px 2px lightgray;
 }
 .step_btn i {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
   color: #7E7E7E;
   font-size: 115%;
   margin-left: 0px;
@@ -98,10 +97,11 @@ h1, h2, h3, h4 {
   border-radius: 25px;
   box-shadow: 1px 1px 2px 2px lightgray;
   margin-bottom: 30px;
+  background-color: white;
 }
 .affiche_shop img {
   width: 100%;
-  height: 70%;
+  height: 68%;
   border-radius: 25px 25px 0 0;
   object-fit: cover;
 }
@@ -109,12 +109,14 @@ h1, h2, h3, h4 {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 10px;
+  font-size: 1.2em;
 }
 .affiche_shop figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 5px;
+  padding-top: 10px;
 }
 
 .new_restaurant {
@@ -132,6 +134,10 @@ h1, h2, h3, h4 {
   /* Application d'une marge négative correspondant à la taille de la police pour éviter les décalages*/
 }
 
+.gradient_heart {
+  margin-right: 30px;
+  font-size: 150%;
+}
 .gradient_heart:hover {
   cursor: pointer;
   animation: gradientheart 1s;
@@ -450,7 +456,6 @@ footer i {
   width: 75%;
   margin: auto;
   margin-top: 40px;
-  font-family: 'Roboto';
   font-weight: bold;
 }
 .accroche p {

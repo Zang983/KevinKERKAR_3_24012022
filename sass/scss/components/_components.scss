@@ -39,11 +39,13 @@
 	border:none;
 	height:75px;
 	margin-top:20px;
+	font-weight:bold;
+	font-size:1em;
 	@include light-shadow;
 	i
 	{
-		margin-right:15px;
-		margin-left:15px;
+		margin-right:25px;
+		margin-left:25px;
 		color:#7E7E7E;
 		font-size:115%;
 		margin-left:0px;
@@ -82,10 +84,11 @@
 	@include radius25;
 	@include light-shadow;
 	margin-bottom:30px;
+	background-color:white;
 	img
 	{
 		width:100%;
-		height:70%;
+		height:68%;
 		border-radius:25px 25px 0 0;
 		object-fit:cover;
 	}
@@ -94,6 +97,7 @@
 		margin-top:5px;
 		margin-bottom:5px;
 		margin-left:10px;
+		font-size:1.2em;
 	}
 	figcaption
 	{
@@ -101,6 +105,7 @@
 		justify-content: space-between;
 		align-items:center;
 		padding-right:5px;
+		padding-top:10px;
 	}
 }
 .new_restaurant /* Affiche l'indication qu'il s'agit d'un nouveau restaurant, nous n'utilisons pas "content" en CSS pour des raisons d'accéssibilité.*/
@@ -119,6 +124,8 @@
 }
 .gradient_heart /*Appel l'animation faisant le dégradé dans le coeur*/
 {
+	margin-right:30px;
+	font-size:150%;
 	&:hover
 	{
 		cursor:pointer;
