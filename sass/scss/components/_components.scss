@@ -49,10 +49,8 @@
 	i
 	{
 		margin-right:25px;
-		margin-left:25px;
 		color:#7E7E7E;
 		font-size:115%;
-		margin-left:0px;
 	}
 	.how_use_step
 	{
@@ -93,6 +91,12 @@
 	{
 		width:400px;
 		height:350px;
+	}
+	@media screen and (min-width: map-get($breakpoints,tablet))
+	{
+		width:320px;
+		height:350px;
+
 	}
 	img
 	{

@@ -29,13 +29,15 @@
 	}
 	#restaurant_list
 	{
-		a
-		{
-			@media screen and (min-width: map-get($breakpoints,desktop))
-			{
-				width:400px;
-			}
-		}
+	@media screen and (min-width: map-get($breakpoints,tablet))
+	{
+		
+		display:flex;
+		flex-wrap:wrap;
+		width:91%;
+		margin:auto;
+		justify-content: space-between;
+	}
 	@media screen and (min-width: map-get($breakpoints,desktop))
 	{
 		display:flex;

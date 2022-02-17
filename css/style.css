@@ -82,10 +82,8 @@ li {
 }
 .step_btn i {
   margin-right: 25px;
-  margin-left: 25px;
   color: #7E7E7E;
   font-size: 115%;
-  margin-left: 0px;
 }
 .step_btn .how_use_step {
   display: flex;
@@ -121,6 +119,12 @@ li {
 @media screen and (min-width: 992px) {
   .affiche_shop {
     width: 400px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .affiche_shop {
+    width: 320px;
     height: 350px;
   }
 }
@@ -418,9 +422,13 @@ header {
     padding-top: 40px;
   }
 }
-@media screen and (min-width: 992px) {
-  #restaurant #restaurant_list a {
-    width: 400px;
+@media screen and (min-width: 768px) {
+  #restaurant #restaurant_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 91%;
+    margin: auto;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 992px) {
