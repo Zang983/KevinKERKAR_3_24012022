@@ -174,6 +174,11 @@ li {
   height: 255px;
   object-fit: cover;
 }
+@media screen and (min-width: 992px) {
+  .restaurant__photography {
+    height: 400px;
+  }
+}
 
 /*COMPOSANTS DES PAGES RESTAURANTS*/
 .product {
@@ -574,7 +579,28 @@ footer i {
   .restaurant__menu {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 91%;
     margin: auto;
+  }
+  .restaurant__menu h2 {
+    text-align: center;
+  }
+  .restaurant__menu #starter, .restaurant__menu #main_course {
+    width: 45%;
+  }
+  .restaurant__menu #starter li, .restaurant__menu #main_course li {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .restaurant__menu #dessert {
+    width: 100%;
+  }
+  .restaurant__menu #dessert ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .restaurant__menu #dessert ul li {
+    width: 30%;
   }
 }

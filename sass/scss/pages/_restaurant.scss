@@ -47,7 +47,36 @@
 	{
 		display:flex;
 		flex-direction: row;
+		flex-wrap:wrap;
 		width:91%;
 		margin:auto;
+		h2
+		{
+			text-align: center;
+		}
+		#starter,#main_course
+		{
+			width:45%;
+			li
+			{
+				margin:auto;
+				margin-bottom:20px;
+			}
+		}
+		#dessert
+		{
+			width:100%;
+			ul
+			{
+				display:flex;
+				justify-content: space-between;
+				li
+				{
+					width:30%;
+				}
+			}
+		}
 	}
+	
+
 }
