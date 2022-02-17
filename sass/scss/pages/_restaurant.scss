@@ -11,6 +11,7 @@
 	border-radius:45px 45px 0 0;
 	background-color:#f6f6f6;
 	margin-top:-50px;
+
 }
 .restaurant__header
 {
@@ -25,6 +26,7 @@
 		font-family: 'Shrikhand';
 		font-weight:lighter;
 		margin-bottom:0px;
+		margin-top:0px;
 		font-size:24px;
 	}
 	.gradient_heart
@@ -38,4 +40,14 @@
 	display:inline-block;
 	border-bottom:3px solid #99e2d0;
 	padding-bottom: 5px;	
+}
+.restaurant__menu
+{
+	@media screen and (min-width: map-get($breakpoints,desktop))
+	{
+		display:flex;
+		flex-direction: row;
+		width:91%;
+		margin:auto;
+	}
 }

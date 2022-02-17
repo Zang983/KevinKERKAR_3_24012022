@@ -8,9 +8,20 @@ a
 
 body
 {
-	max-width:768px;
+	@media screen and (max-width: map-get($breakpoints,tablette))
+	{
+		max-width:768px;
+	}
+	@media screen and (min-width: map-get($breakpoints,tablette))
+	{
+		max-width:992px;
+	}
+	@media screen and (min-width: map-get($breakpoints,desktop))
+	{
+		max-width:none;
+	}
 	margin:auto;
-	font-family:'roboto'	
+	font-family:'roboto','Arial';
 }
 ul
 {

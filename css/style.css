@@ -9,9 +9,23 @@ a {
 }
 
 body {
-  max-width: 768px;
   margin: auto;
-  font-family: "roboto";
+  font-family: 'roboto','Arial';
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    max-width: none;
+  }
 }
 
 ul {
@@ -61,6 +75,11 @@ li {
   font-size: 1em;
   box-shadow: 1px 1px 2px 2px lightgray;
 }
+@media screen and (min-width: 992px) {
+  .step_btn {
+    width: 110%;
+  }
+}
 .step_btn i {
   margin-right: 25px;
   margin-left: 25px;
@@ -99,6 +118,12 @@ li {
   margin-bottom: 30px;
   background-color: white;
 }
+@media screen and (min-width: 992px) {
+  .affiche_shop {
+    width: 400px;
+    height: 350px;
+  }
+}
 .affiche_shop img {
   width: 100%;
   height: 68%;
@@ -116,7 +141,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding-right: 5px;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .new_restaurant {
@@ -159,6 +184,11 @@ li {
   display: flex;
   border-radius: 25px;
   box-shadow: 1px 1px 2px 2px lightgray;
+}
+@media screen and (min-width: 992px) {
+  .product {
+    width: 75%;
+  }
 }
 .product:hover {
   cursor: pointer;
@@ -214,10 +244,12 @@ li {
   animation-iteration-count: 1;
   transform-origin: 0 100%;
   margin-left: 10px;
+  animation-fill-mode: forwards;
 }
 .product:hover .product--check_status i {
   animation: bigger_size 0.8s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes gradientheart {
@@ -370,6 +402,20 @@ header {
   padding-top: 8%;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 992px) {
+  #restaurant h2 {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #restaurant #restaurant_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 91%;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
 
 .menu_composition {
   width: 91%;
@@ -398,6 +444,11 @@ footer h2 {
   color: white;
   font-family: 'shrikhand';
 }
+@media screen and (min-width: 768px) {
+  footer h2 {
+    padding-top: 1%;
+  }
+}
 footer a {
   color: white;
 }
@@ -409,24 +460,25 @@ footer i {
 
 /*PARTIE LOADER*/
 #index_main {
-  animation: afterloading 2.8s;
-  animation-fill-mode: forwards;
-  transform-origin: bottom;
+  	/*animation: afterloading 2.8s;
+    	animation-fill-mode: forwards;
+  	transform-origin: bottom;*/
 }
 
 #triangle_loader {
-  animation: loading 2.5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  width: 0px;
-  height: 0px;
-  border-top: 36px solid transparent;
-  border-bottom: 36px solid transparent;
-  border-left: 60px solid #99E2D0;
-  color: transparent;
+  	/*animation:loading 2.5s;
+  	animation-fill-mode:forwards;
+  	animation-iteration-count: 1;
+  	position:absolute;
+  	top:10%;
+  	left:50%;
+      width: 0px;
+      height: 0px;
+      border-top: 36px solid transparent;
+      border-bottom: 36px solid transparent;
+      border-left:60px solid #99E2D0;
+  	color:transparent;*/
+  display: none;
 }
 
 /*PARTIE HAUTE DE LA PAGE*/
@@ -444,6 +496,17 @@ footer i {
 .localisation input {
   border: none;
   background-color: #EAEAEA;
+  font-weight: bold;
+  height: 45px;
+}
+
+@media screen and (min-width: 992px) {
+  #how_use ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 .accroche {
@@ -493,6 +556,7 @@ footer i {
   font-family: 'Shrikhand';
   font-weight: lighter;
   margin-bottom: 0px;
+  margin-top: 0px;
   font-size: 24px;
 }
 .restaurant__header .gradient_heart {
@@ -504,4 +568,13 @@ footer i {
   display: inline-block;
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant__menu {
+    display: flex;
+    flex-direction: row;
+    width: 91%;
+    margin: auto;
+  }
 }

@@ -12,6 +12,10 @@ footer
 	{
 		font-weight:lighter;
 		padding-top:5%;
+		@media screen and (min-width: map-get($breakpoints,tablette))
+		{
+		padding-top:1%;
+		}
 		width:91%;
 		margin:auto;
 		color:white;
