@@ -29,6 +29,10 @@
 	}
 	#restaurant_list
 	{
+		a
+		{
+			width:auto;
+		}
 	@media screen and (min-width: map-get($breakpoints,desktop))
 	{
 		display:flex;

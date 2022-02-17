@@ -418,6 +418,9 @@ header {
     padding-top: 40px;
   }
 }
+#restaurant #restaurant_list a {
+  width: auto;
+}
 @media screen and (min-width: 992px) {
   #restaurant #restaurant_list {
     display: flex;
