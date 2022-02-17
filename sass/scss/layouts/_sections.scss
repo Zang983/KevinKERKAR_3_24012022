@@ -31,7 +31,10 @@
 	{
 		a
 		{
-			width:auto;
+			@media screen and (min-width: map-get($breakpoints,desktop))
+			{
+				width:400px;
+			}
 		}
 	@media screen and (min-width: map-get($breakpoints,desktop))
 	{
