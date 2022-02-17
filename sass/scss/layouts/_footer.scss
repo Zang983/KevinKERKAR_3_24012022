@@ -2,6 +2,11 @@ footer
 {
 	background-color:#353535;
 	padding-bottom:10px;
+	@media screen and (min-width: map-get($breakpoints,desktop))
+	{
+		text-align:center;
+	}
+	
 	
 	nav
 	{

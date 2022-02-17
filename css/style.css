@@ -392,6 +392,7 @@ header {
 #how_use {
   width: 91%;
   margin: auto;
+  margin-bottom: 70px;
 }
 
 #restaurant {
@@ -400,6 +401,11 @@ header {
   padding-bottom: 8%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  #restaurant {
+    padding-bottom: 4%;
+  }
 }
 #restaurant h2 {
   width: 91%;
@@ -436,6 +442,11 @@ header {
 footer {
   background-color: #353535;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    text-align: center;
+  }
 }
 footer nav {
   width: 91%;
